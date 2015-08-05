@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>A99B8AE9-3F39-455E-B2C7-0578F90AFB07</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>ios82_oc_2</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>83718C6FBAFB23240E9C57359929CBEBB2EFD58F</key>
 		<string>https://github.com/KanaanAusten/ios-study-code.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ios82_oc_2/ios82_oc_2.xcodeproj/project.xcworkspace</string>
+	<string>ios82_oc_2/ios82_oc_2.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>83718C6FBAFB23240E9C57359929CBEBB2EFD58F</key>
