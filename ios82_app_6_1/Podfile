@@ -1,0 +1,13 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'ios82_app_6_1' do
+
+platform :ios, '6.4'
+pod "AFNetworking", "~> 2.0"
+end
+
+target 'ios82_app_6_1Tests' do
+
+end
+

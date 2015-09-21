@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bZb-AZ-iPc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="Rg2-kT-sNY">
+            <objects>
+                <viewController id="bZb-AZ-iPc" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PX2-c3-gcF"/>
+                        <viewControllerLayoutGuide type="bottom" id="yps-cB-u5x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YZi-tK-NRu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Azj-fe-heZ">
+                                <rect key="frame" x="86" y="106" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QzF-v2-P9a">
+                                <rect key="frame" x="86" y="178" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCm-U8-jvM">
+                                <rect key="frame" x="111" y="260" width="46" height="30"/>
+                                <state key="normal" title="login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapB:" destination="bZb-AZ-iPc" eventType="touchUpInside" id="cOP-Ma-qAF"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zlk-NA-oTo">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zlk-NA-oTo" firstAttribute="top" secondItem="YZi-tK-NRu" secondAttribute="top" id="4hw-xr-RhG"/>
+                            <constraint firstAttribute="trailing" secondItem="Zlk-NA-oTo" secondAttribute="trailing" id="WaY-0h-4bL"/>
+                            <constraint firstItem="yps-cB-u5x" firstAttribute="top" secondItem="Zlk-NA-oTo" secondAttribute="bottom" id="iIy-qR-CuH"/>
+                            <constraint firstItem="Zlk-NA-oTo" firstAttribute="leading" secondItem="YZi-tK-NRu" secondAttribute="leading" id="qss-Ak-dTT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="launchImageView" destination="Zlk-NA-oTo" id="8cK-My-g7F"/>
+                        <outlet property="passWordT" destination="QzF-v2-P9a" id="i8c-M7-2vP"/>
+                        <outlet property="userNameT" destination="Azj-fe-heZ" id="uIg-uk-oCs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T7Q-xk-uuJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="333"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="xkC-Bu-K2W">
+            <objects>
+                <viewController storyboardIdentifier="Main" id="d9f-sT-iI4" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GQk-5b-50F"/>
+                        <viewControllerLayoutGuide type="bottom" id="QJw-9a-EKx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4v7-XK-gNa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9R-ba-x8M">
+                                <rect key="frame" x="62" y="161" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapB:" destination="d9f-sT-iI4" eventType="touchUpInside" id="JRX-zF-Su4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="02w-Fa-kA6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1235" y="327"/>
+        </scene>
+    </scenes>
+</document>
