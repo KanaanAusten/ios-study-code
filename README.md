@@ -3,6 +3,7 @@
 ##ios示范代码,从coding.net复制过来备份,以备不时之需.
 <br>
 ###更新记录
+###2015.09.27 增加 app_8_1,app_8_2
 ###2015.09.23 增加 app_6_5,app_7_1
 ###2015.09.21 增加app3_2,app3_3,app4_1,app4_2,app5_1,app5_2,app5_3,app5_4,app6_1,app6_2,app6_3,app6_4,nscodning
 ###2015.09.01 增加app2_1,app3_1
